@@ -6,8 +6,9 @@ transfer tensorflow model to caffe model.
 - tf输入的特征图是N*H*W*C(和原图像是一样的），caffe的输入特征图是N*C*H*W。
 - tf中的卷积核是H*W*Cin*Cout，caffe的卷积核是Cout*Cin*H*W.
 ## 将填充权值以后的.prototxt文件写成二进制.caffemodel文件
-- 将CmakeLists.txt和
--
--
+- 将`CmakeLists.txt`和`wm.cpp`置于同一个路径下。
+- `cmake . `
+- `make`
+- 运行 `./write_model` 后就会生成`.caffemodel`文件。
 
 
