@@ -1,5 +1,5 @@
 # tf2caffe
-transfer tensorflow model to caffe model.
+此脚本暂时只支持卷积层、pooling层、fc层的转换。
 ## 读取tf的模型权重，写入.prototxt文件内
 - 写一个模型部署文件（.prototxt)。
 - copy一份作为权重填充模板,用 `python t.py `将tf模型的权重取出来并写入 `.prototxt `文件中。
